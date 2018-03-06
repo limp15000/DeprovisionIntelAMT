@@ -1,0 +1,31 @@
+﻿<LabTech_Expansion
+	Version="120.291"
+	Name="LabTech Search Expansion"
+	Type="Search">
+	<Search>
+		<NewDataSet>
+			<Table>
+				<SensID>990</SensID>
+				<Name>VproActive</Name>
+				<SQL>SELECT 
+   computers.computerid as `Computer Id`,
+   computers.name as `Computer Name`,
+   clients.name as `Client Name`,
+   computers.domain as `Computer Domain`,
+   computers.username as `Computer User`,
+   IF(Computers.FeatureFlags &amp; 2 &lt;&gt; 0, 1, 0) as `Computer.Bios.IsIntelVPro`
+FROM Computers 
+LEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId)
+LEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId)
+LEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)
+ WHERE 
+((IF(Computers.FeatureFlags &amp; 2 &lt;&gt; 0, 1, 0)&lt;&gt;0))
+</SQL>
+				<QueryType>4</QueryType>
+				<ListDATA>FeatureFlags||=|2|=||=|^Select|||||||^</ListDATA>
+				<FolderID>23</FolderID>
+				<SearchXML>&lt;LabTechAbstractSearch&gt;&lt;asn&gt;&lt;st&gt;AndNode&lt;/st&gt;&lt;cn&gt;&lt;asn&gt;&lt;st&gt;ComparisonNode&lt;/st&gt;&lt;lon&gt;Computer.Bios.IsIntelVPro&lt;/lon&gt;&lt;lok&gt;Computer.Bios.IsIntelVPro&lt;/lok&gt;&lt;lmo&gt;IsTrue&lt;/lmo&gt;&lt;dv&gt;NULL&lt;/dv&gt;&lt;dk&gt;NULL&lt;/dk&gt;&lt;/asn&gt;&lt;/cn&gt;&lt;/asn&gt;&lt;/LabTechAbstractSearch&gt;</SearchXML>
+			</Table>
+		</NewDataSet>
+	</Search>
+</LabTech_Expansion>
