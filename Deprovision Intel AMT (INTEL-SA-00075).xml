@@ -1,0 +1,52 @@
+﻿<LabTech_Expansion
+	Version="120.291"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>6331</ScriptId>
+				<FolderId>250</FolderId>
+				<ScriptName>Deprovision Intel AMT (INTEL-SA-00075)</ScriptName>
+				<ScriptNotes>https://mattermedia.com/blog/disabling-intel-amt/
+
+https://security-center.intel.com/advisory.aspx?intelid=INTEL-SA-00075&amp;languageid=en-fr
+Thomas Eklund - Kyos 30.01.2018
+
+</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>1</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAFWPQQrCMBRE94J3yAEakrSkseWTjYobFdHiPk2/kIVpSRuxt5cWhboaZoY3MHB0Fn2POzMYDdXYoRbAZoVr9Ns2+gGD5sAWDvbvzoWJQV1F7BszJuTcvvBZYyCpSEjKhSIiLbOszBS5nIAtELjZ4LrhjqF3rZ+2/4Nvf4iu0bmyBaraUi5NQYXADS0sPijnksu8VkoK8+NnANjy0Xr1ATsDAtnhAAAA</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAN2YUW/aMBDH3yftO1iV2FsgDg2BjUVCDCoktlbLuklTXkxyzawFJ7KdFvXTLw6GBVSCqjXLsgeUnO/s+H78fbI99gJOU/mBSOK+foXQeGuLwsjN2UZyorxzCnEoUG/nuCGcrEECL7VdxcmKxKWG7WBf8yCaMBePe4cNB1FXGQ3dgROMwFkFhmmTkYExDI1RAHeGadqmPVg5jo3JbpSiQzHnXnnSejhPQrrPYhJIPQH9ptvnGSvsRah8JaucJD5K2jqy+0f25ZFtl3gkXLpmPl/11G3ThEnKMlDt+3ftuxZLuqZFl92r9ixYCEySIpncWzbLSH5TqMBiVWHpj06Dcd9E8t3uhz4lDH2jLEweBLr2umi2oXkyEdp+eNzTff4GSnwaJR40x9KqYPnCIsOtImOZFSLDT0vH/cIz0C7rkJW7ncWMRZTBjJFVDMskioDr8P6zUFptWq/WsILkJE2FT5mE2Cdr6U+mt91Hmp7A24mluA9Cyjt+SoKfJIJ93yAr9bP+SKf9NsFVK+Qk3IvpW/+GJ1FuoDmNc1qO8Z2mvvPYhQ1coA06SxQZyVMxMkliHZkH1lJIL9v0N1SVUbcjfkAccxBZLDu1sLLbxKpSsufFpmpEntQdjZSI0S3bGhmHWtAO2oS2YRk6/w0rTyZpqnaKnzPG1HOh1Ic84Pc0AFELveHz6WGnMXz9qlW8/OjVgmjUKkSVhU4EKCgKF8phISEJl+9DKtTGMKyFHW7VIa/hSoZPHVb+SVjnhBZCDBJQXasSt+s40rCyWnW8sCuU9dLXA63a8FdenKgv1yGdJrb5O1tfx/4CM9Qk+Z0VAAA=</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>67c9e7bc-05a9-11e8-9cef-005056b7751a</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>250</FolderID>
+					<ParentID>190</ParentID>
+					<Name>Security</Name>
+					<GUID>c13a85e4-0ac5-443a-9543-2d851ff8cb42</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>190</FolderID>
+					<ParentID>0</ParentID>
+					<Name>Kyos</Name>
+					<GUID>8dbcd6db-d1b5-42e5-bd60-ab72156bee02</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>
